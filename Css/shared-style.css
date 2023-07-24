@@ -1,0 +1,219 @@
+:root {
+  /* Colors */
+  --color-light: hsla(230, 98%, 47%, 1);
+  --color-dark-300: hsla(231, 98%, 16%, 1);
+  --color-dark-500: hsla(231, 96%, 8%, 1);
+  --clr-neutral: hsla(0, 0%, 100%, 1);
+
+  /* Font Family */
+  --ff-body: "DM Sans", sans-serif;
+
+  /* Font Weights */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* Font Sizes */
+  --fs-50: 0.875rem;
+  --fs-100: 1rem;
+  --fs-200: 1.125rem;
+  --fs-300: 1.25rem;
+  --fs-400: 1.375rem;
+  --fs-500: 1.75rem;
+  --fs-600: 2rem;
+  --fs-700: 2.375rem;
+  --fs-800: 2.625rem;
+  --fs-900: 4.125rem;
+  --fs-M: 7.5rem;
+  --fs-MC: 11.25rem;
+
+  --fs-primary-heading: var(--fs-900);
+  --fs-body: var(--fs-200);
+  --fs-nav: var(--fs-600);
+  --fs-button: var(--fs-100);
+  --fs-secondary: var(--fs-500);
+  --fs-error: var(--fs-MC);
+}
+
+@media (min-width: 43em) {
+  :root {
+    --fs-primary-heading: var(--fs-700);
+    --fs-body: var(--fs-100);
+    --fs-nav: var(--fs-50);
+    --fs-button: var(--fs-100);
+    --fs-secondary: var(--fs-800);
+    --fs-error: var(--fs-M);
+  }
+}
+/********************** Css resets ****************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/****************** Css Reset *************************************/
+h1 {
+  font-family: var(--ff-body);
+  background-color: red;
+}
+
+/* Utility Class */
+.text-ligt {
+  color: var(--color-light);
+}
+
+.text-color-dark-300 {
+  color: var(--color-dark-300);
+}
+
+.text-color-neutral {
+  color: var(--clr-neutral);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.bg-dark-light {
+  background-color: var(--color-dark-300);
+}
+
+.bg-dark-deep {
+  background-color: var(--color-dark-500);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+.fw-sm {
+  font-weight: var(--fw-400);
+}
+
+.fw-regular {
+  font-weight: var(--fw-500);
+}
+
+.fw-bold {
+  font-weight: var(--fw-700);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary {
+  font-size: var(--fs-secondary);
+}
+
+.fs-body {
+  font-size: var(--fs-body);
+}
+
+.fs-button {
+  font-size: var(--fs-button);
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+
+.fs-error {
+  font-size: var(--fs-error);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  --max-width: 1246px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), calc(100% - var(--padding) * 2));
+  margin-inline: auto;
+}
