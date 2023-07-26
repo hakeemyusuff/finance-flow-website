@@ -112,10 +112,6 @@ svg {
 }
 
 /****************** Css Reset *************************************/
-h1 {
-  font-family: var(--ff-body);
-  background-color: red;
-}
 
 /* Utility Class */
 .text-ligt {
@@ -186,6 +182,14 @@ h1 {
   font-size: var(--fs-error);
 }
 
+.fs-50 {
+  font-size: var(--fs-50);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
 .fs-300 {
   font-size: var(--fs-300);
 }
@@ -210,10 +214,83 @@ h1 {
   border: 0;
 }
 
+.padding-block {
+  padding-block: 2rem;
+}
+
 .container {
   --max-width: 1246px;
   --padding: 1rem;
 
-  width: min(var(--max-width), calc(100% - var(--padding) * 2));
+  width: min(var(--max-width), (100% - var(--padding) * 2));
   margin-inline: auto;
+}
+
+/* buttons */
+.button {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100vmax;
+  padding: 1em 1.7em;
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-neutral);
+  background-color: var(--color-light);
+}
+
+.button-dark {
+  background-color: var(--color-dark-300);
+}
+
+.button:hover,
+.hover:focus-visible {
+  background-color: var(--color-dark-300);
+}
+
+.button-dark:hover,
+.button-dark:focus-visible {
+  background-color: var(--color-light);
+}
+
+body {
+  color: var(--clr-neutral);
+  background-color: var(--color-dark-500);
+  font-family: var(--ff-body);
+  font-weight: var(--fs-400);
+}
+
+.desktop-logo {
+  display: none;
+}
+
+@media (min-width: 43em) {
+  .desktop-logo {
+    display: block;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+}
+
+.header {
+  padding-top: 1.5rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  border: 1px solid red;
+  /* gap: clamp(1rem, 5vw, 3rem); */
 }
