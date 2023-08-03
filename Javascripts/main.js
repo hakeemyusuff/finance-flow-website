@@ -8,24 +8,11 @@ navToggle.addEventListener("click", () => {
   headerNav.toggleAttribute("data-visible");
 });
 
-/* swiper */
-// core version + navigation, pagination modules:
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-// import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 // init Swiper:
-const swiper = new Swiper(".swiper", {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
+const swiper = document.querySelector(".swiper");
+new Swiper(swiper, {
   slidesPerView: 1,
   spaceBetween: 5,
-  renderBullet: function (index, className) {
-    return '<span class="' + className + '">' + (index + 1) + "</span>";
-  },
 
   breakpoints: {
     480: {
