@@ -221,6 +221,10 @@ svg {
   font-size: var(--fs-400);
 }
 
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
 .text-center {
   text-align: center;
 }
@@ -371,13 +375,15 @@ body {
     display: block;
     cursor: pointer;
     border: 0;
-    background: transparent;
+    background: var(--color-light);
+    border-radius: 50%;
     width: 2rem;
     aspect-ratio: 1;
     background-image: url("../Assets/icon-hamburger.svg");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
+    border: 10px solid transparent;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -900,6 +906,11 @@ p {
 
   .cta_button .button {
     width: 15vw;
+  }
+
+  .footer p:last-of-type {
+    text-align: left;
+    margin: 0;
   }
 }
 

@@ -1,1 +1,57 @@
 @import url(shared-style.css);
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light);
+  border-radius: 100vmax;
+  padding: 0.4rem 0.6rem;
+  margin-block: 1rem;
+  width: 4rem;
+}
+
+.features li::marker {
+  color: var(--color-light);
+}
+
+.frame .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 49em) {
+  .center-text {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  p {
+    max-width: 52ch;
+  }
+
+  .pricing_text {
+    padding-top: 3rem;
+  }
+
+  .frames_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .prices .container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10rem;
+  }
+}

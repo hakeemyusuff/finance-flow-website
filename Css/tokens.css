@@ -1,1 +1,95 @@
 @import url(shared-style.css);
+
+h3 {
+  text-transform: capitalize;
+}
+
+.tokens_desktop {
+  display: none;
+}
+
+.tokens_text {
+  padding-top: 2.5rem;
+}
+
+.token {
+  padding-block: 2rem;
+}
+
+.symbol {
+  background-color: var(--color-dark-300);
+  padding: 0.3rem 0.5rem;
+  border-radius: 100vmax;
+}
+
+.token > div {
+  margin-block: 1.5rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.coin {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.website a {
+  display: inline-block;
+  color: var(--clr-neutral);
+  margin-block: 1rem;
+  opacity: 0.5;
+}
+
+.website a:hover {
+  opacity: 1;
+}
+
+@media (min-width: 49em) {
+  .center-text {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  p {
+    max-width: 52ch;
+  }
+
+  .tokens_mobile {
+    display: none;
+  }
+
+  .tokens_desktop {
+    display: block;
+  }
+
+  .tokens_text {
+    padding-top: 4rem;
+  }
+
+  .table {
+    margin: 5rem 0 10rem;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .table p {
+    max-width: 35ch;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+
+  .table a {
+    color: var(--clr-neutral);
+    opacity: 0.5;
+  }
+
+  .table a:hover {
+    opacity: 1;
+  }
+}

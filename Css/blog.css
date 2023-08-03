@@ -1,1 +1,221 @@
 @import url(shared-style.css);
+
+.blog {
+  padding-block: 2rem;
+}
+
+.center-text {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.subscribe {
+  background-color: var(--color-light);
+  margin-block: 4rem;
+}
+
+.subscribe_cta img {
+  margin-inline: auto;
+  padding-bottom: 1rem;
+}
+
+input {
+  border-radius: 100vmax;
+  border: none;
+  padding: 1.3rem 2rem;
+  margin-block: 1.25rem;
+  width: 100%;
+}
+
+form .button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: hsla(231, 97%, 36%, 1);
+}
+
+form .button:hover {
+  background-color: var(--color-dark-300);
+}
+
+.sort p {
+  width: 100%;
+  background-color: var(--color-dark-300);
+  border-radius: 100vmax;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.sort .active {
+  background-color: var(--color-light);
+}
+
+.posts {
+  padding-block: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.active-nav {
+  color: var(--color-light);
+  font-size: var(--fs-50);
+}
+
+.event {
+  cursor: pointer;
+}
+
+.event:hover {
+  opacity: 0.5;
+}
+
+.blog-section .container {
+  transition: transform 250ms;
+}
+
+.fadeIn {
+  transform: scale(0, 1);
+}
+
+.blog_post .news_author {
+  padding: 0;
+  margin-block: 2rem;
+}
+
+.blog_title {
+  margin-bottom: 2rem;
+}
+
+article {
+  margin-block: 2rem;
+}
+
+.highlight {
+  background-color: var(--color-dark-300);
+  padding: 2rem 5rem;
+  border-radius: 2rem;
+}
+
+@media (min-width: 49em) {
+  .center-text {
+    text-align: left;
+    margin-inline: auto;
+  }
+
+  blog_post .news_author {
+    margin-top: 4rem;
+  }
+
+  .blog_post h2 {
+    width: 43vw;
+  }
+
+  .blog_post p {
+    max-width: 67ch;
+  }
+
+  article {
+    display: grid;
+    justify-content: center;
+  }
+
+  article h3 {
+    width: 45vw;
+  }
+
+  .blog_main .news_author {
+    display: none;
+  }
+  p {
+    max-width: 52ch;
+  }
+
+  .blog_text {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 3rem;
+  }
+
+  .blog_main .news_frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blog_main .news_frame img {
+    border-radius: 0 2rem 2rem 0;
+    width: 45vw;
+    grid-column: 2 / 3;
+  }
+
+  .blog_main .news_frame .desc {
+    padding-block: 5rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .blog_main .product-name {
+    position: relative;
+  }
+
+  .subscribe .container {
+    display: flex;
+    align-items: center;
+    padding-block: 4rem;
+  }
+
+  .subscribe_cta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+  }
+
+  .subscribe_cta h2 {
+    width: 40vw;
+    text-align: left;
+  }
+
+  form {
+    position: relative;
+    width: 40%;
+  }
+
+  form .button {
+    position: absolute;
+    top: 1.7rem;
+    right: 0.5rem;
+    width: fit-content;
+  }
+
+  .filter-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sort {
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    justify-self: end;
+  }
+
+  .sort p {
+    width: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.3rem;
+    margin-top: 3rem;
+  }
+}

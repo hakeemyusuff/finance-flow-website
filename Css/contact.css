@@ -1,1 +1,86 @@
 @import url(shared-style.css);
+.contact h1 {
+  padding: 2rem 0 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  margin: 0.5rem 0 1.5rem;
+  border-radius: 100vmax;
+  border: 0;
+  color: hsla(0, 0%, 100%, 1);
+  background-color: var(--color-dark-300);
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  margin: 0.5rem 0 1.5rem;
+  border-radius: 1rem;
+  border: 0;
+  color: hsla(0, 0%, 100%, 1);
+  background-color: var(--color-dark-300);
+}
+
+form .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reach-us {
+  padding-block: 3rem;
+}
+
+.in_line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.center-text {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.question {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-block: 1rem;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  width: 2rem;
+  aspect-ratio: 1;
+  background-image: url("../Assets/extend.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.btn[aria-expanded="true"] {
+  background-image: url("../Assets/collapse.png");
+}
+
+.extend {
+  text-align: left;
+}
+
+@media (min-width: 49em) {
+  .questions {
+    width: 60%;
+    margin-inline: auto;
+  }
+}
