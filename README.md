@@ -2,7 +2,7 @@
 
 ## Description
 
-    This multi-page website is a template designed for finance startups. It marks my first project after almost a year since I last worked on HTML and CSS. The motivation to embark on this project came from [BOLARINWA](https://github.com/TLTechbender),who also built the same website, you can check it out [here](https://ysf-flow.netlify.app/), He motivated me to improve my coding skills. Creating this website allowed me to brush up on my coding abilities, and I have been learning something new every day throughout its development. Below, I will share the valuable insights and lessons I gained during the process
+This multi-page website is a template designed for finance startups. It marks my first project after almost a year since I last worked on HTML and CSS. The motivation to embark on this project came from [BOLARINWA](https://github.com/TLTechbender),who also built the same website, you can check it out [here](https://ysf-flow.netlify.app/), He motivated me to improve my coding skills. Creating this website allowed me to brush up on my coding abilities, and I have been learning something new every day throughout its development. Below, I will share the valuable insights and lessons I gained during the process
 
 # Design
 
@@ -20,8 +20,9 @@ Designers: Ella and Sofia [Ash Studio](https://www.figma.com/@ashcreative)
 
 ## Contributing
 
-1. Contribute code: The website is not pixel perfect, There are a lot of places where the websites doesn't look like the design, feel free to contribute and make changes to the website
-   2.Suggestions: If you don't want to code but have some awesome ideas on how to make the websites better I am open to learning besides everyday is a learning day for me
+- Contribute code: The website is not pixel perfect, There are a lot of places where the websites doesn't look like the design, feel free to contribute and make changes to the website
+
+- Suggestions: If you don't want to code but have some awesome ideas on how to make the websites better I am open to learning besides everyday is a learning day for me
 
 ## Instructions
 
