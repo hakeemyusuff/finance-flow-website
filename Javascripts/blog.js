@@ -8,9 +8,17 @@ const elementToBeRemoved = document.querySelectorAll(".remove");
 //handles the changing of the sorting buttons
 for (let filter of filters) {
   filter.addEventListener("click", (e) => {
-    const active = document.querySelector(".active");
-    active.classList.remove("active");
-    e.target.classList.add("active");
+    const activ = document.querySelector(".activ");
+    activ.classList.remove("activ");
+    e.target.classList.add("activ");
+  });
+}
+
+//redirect all buttons to error page when clicked
+const buttons = document.querySelectorAll(".button");
+for (let button of buttons) {
+  button.addEventListener("click", () => {
+    window.location.href = "error.html";
   });
 }
 

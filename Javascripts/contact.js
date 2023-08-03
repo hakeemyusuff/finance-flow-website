@@ -20,3 +20,11 @@ for (let button of buttons) {
     }
   });
 }
+
+//redirect all buttons to error page when clicked
+const butons = document.querySelectorAll(".button");
+for (let button of butons) {
+  button.addEventListener("click", () => {
+    window.location.href = "error.html";
+  });
+}

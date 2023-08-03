@@ -1,4 +1,17 @@
 @import url(shared-style.css);
+@import url(home-page.css);
+
+.active::before {
+  content: "";
+  display: block;
+  background-color: var(--clr-neutral);
+  height: 0.125rem;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  right: 0;
+}
+
 .contact h1 {
   padding: 2rem 0 2rem;
 }
@@ -23,7 +36,17 @@ textarea {
   background-color: var(--color-dark-300);
 }
 
-form .button {
+form .buttton {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100vmax;
+  padding: 1.2em 1.7em;
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-neutral);
+  background-color: var(--color-light);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -79,8 +102,42 @@ form .button {
 }
 
 @media (min-width: 49em) {
+  .contact h1 {
+    padding-top: 5rem;
+  }
+
   .questions {
     width: 60%;
     margin-inline: auto;
+  }
+
+  .contact-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 3rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 3;
+    gap: 2rem;
+  }
+
+  label:last-of-type {
+    grid-column: 1 / 3;
+  }
+
+  form .buttton {
+    width: 50%;
+  }
+
+  .reach-us {
+    padding-block: 0;
+  }
+
+  .faq {
+    padding-top: 5rem;
   }
 }

@@ -1,4 +1,16 @@
 @import url(shared-style.css);
+@import url(home-page.css);
+
+.active::before {
+  content: "";
+  display: block;
+  background-color: var(--clr-neutral);
+  height: 0.125rem;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  right: 0;
+}
 
 .blog {
   padding-block: 2rem;
@@ -46,7 +58,7 @@ form .button:hover {
   cursor: pointer;
 }
 
-.sort .active {
+.sort .activ {
   background-color: var(--color-light);
 }
 

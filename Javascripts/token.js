@@ -10,6 +10,14 @@ async function getTokenData(path) {
   return tokens;
 }
 
+//redirect all buttons to error page when clicked
+const buttons = document.querySelectorAll(".button");
+for (let button of buttons) {
+  button.addEventListener("click", () => {
+    window.location.href = "error.html";
+  });
+}
+
 //Get each token from the array and render it to the page
 function renderTokenDesktop(tokens) {
   for (let token of tokens) {

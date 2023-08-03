@@ -23,6 +23,9 @@ const swiper = new Swiper(".swiper", {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
   spaceBetween: 5,
+  renderBullet: function (index, className) {
+    return '<span class="' + className + '">' + (index + 1) + "</span>";
+  },
 
   breakpoints: {
     480: {
@@ -41,3 +44,10 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+const buttons = document.querySelectorAll(".button");
+for (let button of buttons) {
+  button.addEventListener("click", () => {
+    window.location.href = "pages/error.html";
+  });
+}
